@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Блок-лист страниц: Параметры </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body style="color: #719E6F;">
+	<img src="128.png" />
+	<h2>Чёрный список: Параметры</h2>
+	<table width="100%" cellpadding="5">
+		<tr>
+			<td id="ei">Экспорт/Импорт чёрного списка:</td>
+			<td style="text-align: left;">
+				<select id="data">
+					<option value="no">Выберите действие</option>
+					<option value="exp">Экспорт</option>
+					<option value="imp">Импорт</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td id="act">Действия с заблокированным сайтом:</td>
+			<td style="text-align: left;">
+				<select id="tab">
+					 <option value="page">открыть страницу расширения</option>
+					 <option value="close">автоматически закрыть вкладку</option>
+				</select>				
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"><p id="status"></p></td>
+		</tr>
+	</table>
+	<a href="" style="display:none" id="load" download="Чёрный список.blacklist"></a>
+	<input type="file" style="display:none" id="file" accept=".blacklist"/>
+	<style type="text/css">
+		body {margin: 10%;text-align: center;}	
+		#act, #ei {text-align: right;}	
+		#act, #tab, #status, #ei, #data{font-size: 17px;}	
+		#status {font-weight: bold;color: #38B332;}
+	</style>
+	<script src="js/options.js"></script>
+</body>
+</html>
