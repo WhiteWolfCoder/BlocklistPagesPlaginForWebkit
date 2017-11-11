@@ -1,0 +1,2 @@
+# BlocklistPagesPlaginForWebkit
+Плагин  для webkit
